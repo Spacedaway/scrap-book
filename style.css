@@ -5,7 +5,7 @@
 }
 
 /* HERO SECTION */
-header{
+header {
     min-height: 100vh;
 }
 
@@ -51,24 +51,24 @@ header{
     gap: 100px;
 }
 
-.hero-text{
+.hero-text {
     width: 450px;
     height: 60vh;
     max-width: 100%;
     word-break: normal;
 }
 
-.hero-text h1{
+.hero-text h1 {
     font-weight: bold;
     font-size: 75px;
 }
 
-.hero-text p{
+.hero-text p {
     font-size: 15px;
     padding-block: 15px;
 }
 
-.hero-text button{
+.hero-text button {
     border: 1px solid black;
     border-radius: 5px;
     padding: 10px 30px 10px 30px;
@@ -78,7 +78,7 @@ header{
     cursor: pointer;
 }
 
-.hero-img{
+.hero-img {
     background-image: url(./images/background.png);
     background-repeat: no-repeat;
     width: 650px;
@@ -89,10 +89,10 @@ header{
 }
 
 /* FIRST SECTION */
-.memory{
+.memory {
     display: flex;
     flex-direction: column;
-    background-color: #1E1E1E;
+    background-color: #1e1e1e;
     min-height: auto;
     align-items: center;
     justify-content: center;
@@ -102,67 +102,67 @@ header{
     max-width: 100%;
 }
 
-.memory-text{
+.memory-text {
     padding-block: 50px;
-    width: min(350px, 100%);
+    width: min(400px, 100%);
 }
 
-.memory-text h2{
+.memory-text h2 {
     font-size: 45px;
     padding-bottom: 20px;
 }
 
-.memory-text p{
+.memory-text p {
     padding-bottom: 20px;
 }
 
-.memory-text button{
+.memory-text button {
     border: 2px solid white;
     border-radius: 5px;
     padding: 10px 30px 10px 30px;
     background-color: inherit;
     font-weight: bold;
     color: white;
-    cursor: pointer;   
+    cursor: pointer;
 }
 
 /* SECOND SECTION */
-.visits{
+.visits {
     margin-top: 10vh;
     display: flex;
 }
 
-.sites{
+.sites {
     width: 300px;
     max-width: 100%;
     height: 500px;
     text-align: justify;
 }
 
-.sites h3{
+.sites h3 {
     padding-block: 10px;
     font-size: x-large;
 }
 
-.sites p{
+.sites p {
     font-size: small;
 }
 
-.visits .start{
+.visits .start {
     margin-right: auto;
     margin-left: 3.5vw;
 }
 
-.visits .middle{
+.visits .middle {
     margin: auto;
 }
 
-.visits .end{
+.visits .end {
     margin-left: auto;
     margin-right: 3.5vw;
 }
 
-.site-img{
+.site-img {
     width: inherit;
     height: 200px;
     max-width: 100%;
@@ -187,7 +187,7 @@ header{
 }
 
 /* THIRD SECTION */
-.travel{
+.travel {
     margin-top: 20vh;
     display: flex;
     flex-direction: column;
@@ -262,38 +262,38 @@ desc p{
 } */
 
 /* FIFTH SECTION */
-.anywhere{
+.anywhere {
     margin-top: 10vh;
-    background-color: #1E1E1E;
+    background-color: #1e1e1e;
     display: flex;
     padding-block: 15vh;
     color: white;
     gap: 50px;
 }
 
-.anywhere-text{
+.anywhere-text {
     margin-right: auto;
     margin-left: 3.5vw;
     width: min(500px, 50%);
 }
 
-.anywhere-text h1{
+.anywhere-text h1 {
     font-size: 40px;
     padding-bottom: 10vh;
     font-weight: bold;
 }
 
-.anywhere-text h3{
+.anywhere-text h3 {
     padding-bottom: 2vh;
     font-weight: bold;
 }
 
-.anywhere-text p{
+.anywhere-text p {
     padding-bottom: 5vh;
     font-size: 15px;
 }
 
-.anywhere-img{
+.anywhere-img {
     background-image: url(./images/2.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -303,14 +303,171 @@ desc p{
     align-items: center;
 }
 
+/* PORTFOLIO */
+.row {
+    margin-right: 0 !important;  
+}
+
+.sectionD {
+    margin-top: 10vh;
+}
+
+.sectionD .wideImage {
+    background-image: url(./images/samuele-errico-piccarini-MCroQe9ykmM-unsplash.jpg);
+    background-size: cover;
+}
+
+.sectionD h1 {
+    padding-top: 100px;
+    padding-bottom: 20px;
+    font-weight: 600;
+    font-size: 50px;
+    font-family: cursive;
+}
+
+.sectionD p {
+    font-weight: 900;
+    margin-bottom: 46px;
+}
+
+.sectionD .secondClass {
+    text-align: center;
+}
+
+.secondClass span {
+    text-decoration: underline;
+}
+
+.portfolio {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
+}
+
+.portfolio-item {
+    color: #21110b;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition-duration: 600ms;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+}
+
+.medium {
+    grid-row: span 6;
+    grid-column: span 2;
+}
+
+.large-square {
+    grid-row: span 3;
+    grid-column: span 4;
+}
+
+.medium1 {
+    grid-row: span 3;
+    grid-column: span 4;
+}
+
+.two {
+    background-image: url(https://images.unsplash.com/photo-1655634337899-537c5d0de1f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    background-blend-mode: soft-light;
+    color: lightgray;
+    background-size: cover;
+    background-position: top left;
+    transition: all ease-in-out 600ms;
+    position: relative;
+}
+
+.two::before {
+    content: "";
+    display: block;
+    background: black;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: all ease-in-out;
+}
+
+.two:hover {
+    opacity: 0.9;
+    background-blend-mode: none;
+    background-position: center;
+}
+
+.medium {
+    background-image: url(https://images.unsplash.com/photo-1655552360601-ee84fbaf882d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=680&q=80);
+    background-blend-mode: soft-light;
+    color: lightgray;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+    transition: all ease-in-out 600ms;
+    position: relative;
+}
+
+.medium::before {
+    content: "";
+    display: block;
+    background: black;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: all ease-in-out;
+}
+
+.medium:hover {
+    background-blend-mode: none;
+    background-position: center;
+}
+
+.medium1 {
+    background-image: url(https://images.unsplash.com/photo-1623944889288-cd147dbb517c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    background-blend-mode: soft-light;
+    color: lightgray;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+    transition: all ease-in-out 600ms;
+    position: relative;
+}
+
+.medium1::before {
+    content: "";
+    display: block;
+    background: black;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: all ease-in-out;
+}
+
+.medium1:hover {
+    opacity: 0.9;
+    background-blend-mode: none;
+    background-position: center;
+}
+
 /* SIXTH SECTION */
-.contact{
+.contact {
     margin-top: 10vh;
     display: flex;
     gap: 50px;
 }
 
-.contact-form{
+.contact-form {
     width: 50%;
     max-width: 500px;
     margin-right: auto;
@@ -318,13 +475,13 @@ desc p{
     height: 500px;
 }
 
-.contact-form h1{
+.contact-form h1 {
     font-size: 60px;
     font-weight: bold;
     padding-bottom: 2vh;
 }
 
-.contact-form div{
+.contact-form div {
     margin-bottom: 2vh;
 }
 
@@ -340,11 +497,11 @@ input {
     padding-left: 15px;
 }
 
-.form-text{
+.form-text {
     height: 150px;
 }
 
-form button{
+form button {
     margin-top: 5vh;
     border: 1px solid black;
     border-radius: 5px;
@@ -352,10 +509,10 @@ form button{
     padding: 10px 0px 10px 0px;
     background-color: black;
     color: white;
-    cursor: pointer;      
+    cursor: pointer;
 }
 
-.contact-img{
+.contact-img {
     background: url(./images/5.png);
     background-repeat: no-repeat;
     margin-left: auto;
@@ -366,39 +523,46 @@ form button{
 }
 
 /* FOOTER */
-footer{
-    background-color: #C5C5C5;
+footer {
+    background-color: #c5c5c5;
     margin-top: 10vh;
 }
 
-.footer{
+.footer {
     display: flex;
     justify-content: space-around;
     gap: 5px;
     padding-block: 100px;
 }
 
-.footer .logo h1{
+.footer .logo h1 {
     font-size: 40px;
 }
 
-.footer ul{
+.footer ul {
     list-style-type: none;
 }
 
-.footer li{
+.footer li {
     padding-bottom: 15px;
 }
 
-.quick-links{
+.quick-links {
     padding-top: 25px;
 }
 
-.sub-links{
-    padding-top: 45px;
+.sub-links {
+    padding-top: 65px;
 }
 
-footer p{
+ol, ul {
+    padding-left: 0 !important;
+}
+
+footer p {
     padding-bottom: 50px;
     text-align: center;
+    margin-bottom: 0;
 }
+
+/* MEDIA QUERIES */
